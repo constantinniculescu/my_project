@@ -1,0 +1,23 @@
+$tablet: '(max-width:800px)';
+$phone: '(max-width:400px)';
+* { box-sizing: border-box; }
+body {
+	font-family: 'Lobster','Lobster Two', cursive;
+//	border-left: 1px solid #ccc;
+//	border-right: 1px solid #ccc;
+	margin: 0 auto;
+	max-width: 1600px;
+	background-color: white;
+	
+	width: 80%;
+
+	@media #{$tablet} {
+		width: 80%;
+		border: none;
+	}
+
+	@media #{$phone} {
+		width: 95%;
+		padding: 0;
+	}
+}

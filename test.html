@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gatesc deci existi</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./test.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+</head>
+
+
+<body>
+    <div class = "allDoc">
+
+    
+    <header>
+            <div class = "brand"> 
+                    <div class="image-left">
+                            <img src ="assets/cornucopia-stanga.jpg">
+                    </div>
+        
+                    <h1><a href="file:///home/constantin/clwork/my_project/index.html">
+                            Gatesc deci existi
+                        </a>
+                           
+                    </h1>
+                        
+                    <div class ="image-right">
+                            <img src="assets/cornucopia-dreapta.jpg">
+                    </div>
+            </div>
+    </header>
+    <div class = "page">
+
+    <div class = "register">
+        <form action="action_page.php">
+                
+                  <h1>Register</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                  <hr>
+              
+                  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                  <button type="submit" class="registerbtn">Register</button>
+
+                </div>
+              <hr>
+                <div class="container signin">
+                  <p>Already have an account? <a id="signIn" href="#">Sign in</a></p>        
+         </form>
+         
+        </div>
+    <hr>
+
+        
+         <div class = "continut">
+
+             <div class = "recipDesc">             
+            
+                    <label>
+                        Recipe Tile
+                    </label>
+                    <input type="text" name="title" >
+                    <div class = "description">
+                    <label>
+                        Description
+                    </label>
+                    
+                    <textarea placeholder = "Enter recipe description here..." rows="8" cols="70" >
+                    </textarea>
+                    </div>
+            </div>
+
+
+
+     
+     <hr />
+     Select recepies category:
+        <select id="slct1" name="slct1" >
+                <option value="Select one">Select One</option>
+                <option value="Starters">Starters</option>
+                <option value="Main Courses">Main Courses</option>
+                <option value="Dessert">Dessert</option>
+        </select>
+     <hr />
+
+     Preparation Time
+
+     <input type="text" name="enter preparation time" >
+        <select id = "prepTime" name = "prepTime">
+            <option value= "select one">Select one</option>
+            <option value= "hours">hours</option>
+            <option value= "minutes">minutes</option>
+       </select>     
+         
+
+   
+    
+
+         Cooking time
+        
+        <input type="text" name="cooking preparation time" class="cookTime">
+            <select id = "cookTime" name = "cookTime" class = "cookTime">
+                <option value= "select one">Select one</option>
+                <option value= "hours">hours</option>
+                <option value= "minutes">minutes</option>   
+            </select>
+<hr>
+
+
+            Servings
+
+
+            
+            <select id = "serving" name = "serving">
+                <option value= "select one">Select one</option>
+                <option value= "2">2</option>
+                <option value= "4">4</option>
+                <option value= "6">6</option>   
+            </select>
+
+
+            Difficulty
+
+
+
+            
+            <select id = "difficulty" name = "difficulty">
+                <option value= "select one">Select one</option>
+                <option value= "easy">Easy</option>
+                <option value= "intermediate">Intermediate</option>
+                <option value= "difficult">Difficulty</option>   
+            </select>
+
+            <hr>
+
+
+           
+           <h2> Ingredients:</h2>
+
+            <input type="text" placeholder= " Type Quantity" name="quantity">
+            <select id = "unit" name = "unit">
+                    <option value= "select one">Select unit</option>
+                    <option value= "gram">gram(s)</option>
+                    <option value= "kilo">kilogram(s)</option>
+                    <option value= "milli">milliliter(s)</option>   
+                    <option value= "liter">liter(s)</option>
+                    <option value= "piece">piece(s)</option>
+                    <option value= "spoon">spoon(s)</option>
+                    <option value= "package">package(s)</option>   
+                        
+                </select>
+
+            
+            <input type="text" id = "ingredient" placeholder= " Type Ingredient..." class= "name-ingredient" tabindex="12" name="ingredient">   
+            <input type = "submit" value="+"> 
+
+            <hr>
+
+        <div class = "prepInst">  
+             <h3> Preparation Instructions</h3>
+
+             <textarea rows="25 " cols="100" name="" placeholder = "Enter preparation instruction here...">
+              
+            </textarea>
+
+
+            
+        </div>
+
+        <hr>
+
+        <input type = "submit" value="Submit"> 
+        <hr>
+
+
+
+
+
+    
+        </div>
+    
+    </div>
+</div>
+<script type="text/javascript" src=".test.js"></script>
+</body>
+
+
+</html>

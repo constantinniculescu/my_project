@@ -1,59 +1,222 @@
-/*
-Error: File to import not found or unreadable: partials/base.
-       Load path: /home/constantin/clwork/my_project/scss
-        on line 7 of scss/main.scss
+* {
+  box-sizing: border-box; }
 
-2: @import "modules/all";
-3: /* all.scss – import all
-4: other modules *\/
-5: /* Partials *\/
-6: @import "partials/reset";
-7: @import "partials/base";
-8: @import "partials/buttons";
-9: /* Vendor *\/
-10: @import "vendor/jquery.ui";
+body {
+  font-family: 'Lobster','Lobster Two', cursive;
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: white;
+  width: 80%; }
+  @media (max-width: 800px) {
+    body {
+      width: 80%;
+      border: none; } }
+  @media (max-width: 400px) {
+    body {
+      width: 95%;
+      padding: 0; } }
 
-Backtrace:
-scss/main.scss:7
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:67:in `rescue in import'
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:44:in `import'
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:28:in `imported_file'
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:37:in `css_import?'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:313:in `visit_import'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:294:in `watch'
-/usr/lib/ruby/vendor_ruby/sass/plugin.rb:109:in `method_missing'
-/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:356:in `watch_or_update'
-/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:51:in `process_result'
-/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
-/usr/bin/sass:8:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: partials/base.\A        Load path: /home/constantin/clwork/my_project/scss\A         on line 7 of scss/main.scss\A \A 2: @import \"modules/all\";\A 3: /* all.scss – import all\A 4: other modules */\A 5: /* Partials */\A 6: @import \"partials/reset\";\A 7: @import \"partials/base\";\A 8: @import \"partials/buttons\";\A 9: /* Vendor */\A 10: @import \"vendor/jquery.ui\";"; }
+html {
+  font-size: 15px;
+  font-family: 'Lobster','Lobster Two', cursive; }
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+  display: block; }
+  .container .brand {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    width: 100%;
+    height: 270px;
+    background-color: white; }
+    .container .brand .image-left {
+      position: relative;
+      top: 0px; }
+    .container .brand h1 {
+      font-family: 'Lobster','Lobster Two', cursive;
+      font-size: 72px;
+      padding: 40px 0 0 0; }
+      .container .brand h1 a {
+        text-decoration: none;
+        color: #FFBE00; }
+  .container nav {
+    display: flex;
+    padding: 0px 0px 0px 200px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; }
+    .container nav .menu li {
+      display: inline-block; }
+      .container nav .menu li a {
+        font-weight: lighter;
+        display: block;
+        color: black;
+        margin-right: 25px;
+        text-decoration: none;
+        font-family: 'Lobster','Lobster Two', cursive;
+        font-size: 30px;
+        text-transform: uppercase; }
+        .container nav .menu li a.active {
+          border-radius: 8px;
+          color: red; }
+        .container nav .menu li a:hover {
+          border: solid green 1px;
+          border-radius: 8px;
+          color: green; }
+
+.mySlides {
+  display: none;
+  margin: 0px; }
+
+.w3-content.w3-display-container a {
+  font-family: 'Lobster','Lobster Two', cursive;
+  font-size: 36px;
+  text-decoration: none;
+  text-shadow: 2px 2px green;
+  color: white;
+  position: relative;
+  top: -300px;
+  right: -200px; }
+
+#recipesMain {
+  display: none; }
+
+#recipesMain #mainCourses a {
+  text-decoration: none; }
+
+#recipesMain #mainCourses a img {
+  box-shadow: 2px 2px 2px 2px #746b63; }
+
+#mainCourses {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  font-size: 24px; }
+
+h2 {
+  text-align: center;
+  font-family: 'Lobster','Lobster Two', cursive;
+  font-size: 60px; }
+
+#firstRecipe {
+  display: none; }
+
+.intro {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 2px;
+  font-size: 36px; }
+
+.beefWellingthon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px; }
+  .beefWellingthon ul li {
+    list-style: none;
+    font-size: 22px; }
+
+.recipeContent p {
+  font-size: 22px; }
+
+.night {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px; }
+  .night p {
+    font-family: 'Lobster', 'Lobster Two';
+    font-size: 24px; }
+
+.season {
+  font-size: 36px;
+  font-family: 'Lobster', 'Lobster Two';
+  padding: 0  0  0 10px; }
+
+.cucumber {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.script {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  padding: 0  0  0 40px;
+  font-size: 36px;
+  font-family: 'Lobster', 'Lobster Two'; }
+  .script ul li {
+    list-style: none; }
+
+footer {
+  background-color: #F0F2F4;
+  height: 300px; }
+
+.socialmedia {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-gap: 20px;
+  padding: 30px  0px  0px 500px; }
+  .socialmedia .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%; }
+  .socialmedia .fa:hover {
+    opacity: 0.7; }
+  .socialmedia .fa-facebook {
+    background: #3B5998;
+    color: white; }
+  .socialmedia .fa-twitter {
+    background: #55ACEE;
+    color: white; }
+  .socialmedia .fa-google {
+    background: #dd4b39;
+    color: white; }
+  .socialmedia .fa-linkedin {
+    background: #007bb5;
+    color: white; }
+  .socialmedia .fa-youtube {
+    background: #bb0000;
+    color: white; }
+  .socialmedia .fa-instagram {
+    background: #125688;
+    color: white; }
+  .socialmedia .fa-pinterest {
+    background: #cb2027;
+    color: white; }
+
+.copyright {
+  font-size: 36px;
+  font-family: 'Lobster', 'Lobster Two';
+  padding: 10px 0px  20px 470px;
+  height: 36px; }
+
+footer nav {
+  display: flex;
+  padding: 20px 0px 20px 300px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; }
+  footer nav .menu li {
+    display: inline-block; }
+    footer nav .menu li a {
+      display: block;
+      color: black;
+      margin-right: 25px;
+      text-decoration: none;
+      font-family: 'Lobster','Lobster Two', cursive;
+      font-size: 30px;
+      text-transform: uppercase; }
+      footer nav .menu li a.active {
+        border-radius: 8px;
+        color: red; }
+      footer nav .menu li a:hover {
+        border: solid green 1px;
+        border-radius: 8px;
+        color: green; }
+
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

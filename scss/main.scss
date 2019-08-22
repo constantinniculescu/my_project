@@ -1,10 +1,343 @@
-/* Modules */
-@import "modules/all";
-/* all.scss – import all
-other modules */
-/* Partials */
-@import "partials/reset";
-@import "partials/base";
-@import "partials/buttons";
-/* Vendor */
-@import "vendor/jquery.ui";
+@import "template";
+
+
+html {
+    font-size: 15px;
+    font-family: 'Lobster','Lobster Two', cursive;
+}
+
+
+.container{
+    
+    width: 1600px;
+    margin: 0 auto;
+    display: block;
+
+    .brand{
+        display:grid;
+        grid-template-columns: 30% 40% 30%;
+        width: 100%;
+        height: 270px;
+        background-color: white;
+        
+        
+
+
+       .image-left{
+            position: relative;
+            top: 0px;         
+            
+
+        }
+
+
+        h1{
+            
+           
+            font-family: 'Lobster','Lobster Two', cursive;
+            font-size: 72px;
+            padding: 40px 0 0 0;
+          
+
+            
+            
+           
+
+
+            a{
+                text-decoration: none;
+                color: #FFBE00;
+                
+                
+               
+            }    
+        }
+
+        .image-right{
+        }
+    }
+    nav {
+        display: flex;
+        padding: 0px 0px 0px 200px;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+            .menu {
+          li {
+            display: inline-block;
+    
+    
+            
+            a {
+              font-weight:lighter;
+
+              display: block;
+              color:black;
+              margin-right: 25px;
+              text-decoration: none;
+              font-family: 'Lobster','Lobster Two', cursive;  
+              font-size: 30px;
+              text-transform: uppercase;
+              &.active {
+                border-radius: 8px;
+                color:red;
+                
+              }
+              &:hover {
+
+                border: solid green 1px;
+                border-radius: 8px;
+                color: green;
+            
+      
+              }
+            }
+      
+          }
+        }
+    }
+
+
+
+}
+
+
+
+.mySlides {
+    display:none;
+    margin: 0px;
+}  
+
+.w3-content.w3-display-container a{
+  font-family: 'Lobster','Lobster Two', cursive;
+  font-size: 36px;
+  text-decoration: none;
+  text-shadow: 2px 2px green;
+  color:white;
+  position: relative;
+  top: -300px;
+  right: -200px; 
+  
+
+}
+
+#recipesMain{
+  display:none;
+} 
+
+#recipesMain #mainCourses a{
+  text-decoration: none;
+  
+}
+#recipesMain #mainCourses a img{
+  //border: solid blue 1px;
+  box-shadow: 2px 2px 2px 2px rgb(116, 107, 99);
+}
+
+#mainCourses{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  font-size: 24px;
+  
+
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lobster','Lobster Two', cursive;
+    font-size: 60px;
+   
+
+    
+}
+
+#firstRecipe{
+  display:none;
+}
+
+.intro{
+  display:grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 2px;
+  font-size: 36px;
+
+}
+
+.beefWellingthon{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+  ul li{list-style: none;
+    font-size: 22px;
+  }
+
+}
+.recipeContent p{
+  font-size: 22px;
+}
+
+.night{
+  
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+
+  p{
+    font-family: 'Lobster', 'Lobster Two';
+    font-size: 24px;
+  }
+}
+.season{
+  font-size:36px;
+  font-family: 'Lobster', 'Lobster Two';
+  padding: 0  0  0 10px;
+
+}
+
+
+
+.cucumber{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+ 
+  
+
+}
+.script{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:5px;
+  padding: 0  0  0 40px;
+  font-size:36px;
+  font-family: 'Lobster', 'Lobster Two';
+  ul li{
+    list-style: none;
+  }
+
+}
+footer{
+  background-color:#F0F2F4;
+  height: 300px;
+  
+
+}
+ .socialmedia{
+   display:grid;
+   grid-template-columns: repeat(24, 1fr);
+   grid-gap: 20px;
+   padding: 30px  0px  0px 500px;
+   
+  
+   
+
+  
+   
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+
+ } 
+.copyright{
+ 
+  font-size:36px;
+  font-family: 'Lobster', 'Lobster Two';
+  padding: 10px 0px  20px 470px; 
+ 
+  height: 36px;
+  
+  
+ 
+}
+footer nav{
+  
+    display: flex;
+    padding: 20px 0px 20px 300px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+        .menu {
+      li {
+        display: inline-block;
+
+
+        
+        a {
+       
+
+          display: block;
+          color:black;
+          margin-right: 25px;
+          text-decoration: none;
+          font-family: 'Lobster','Lobster Two', cursive;  
+          font-size: 30px;
+          text-transform: uppercase;
+          &.active {
+            border-radius: 8px;
+            color:red;
+            
+          }
+          &:hover {
+
+            border: solid green 1px;
+            border-radius: 8px;
+            color: green;
+        
+  
+          }
+        }
+  
+      }
+    }
+}
+
+.hidden {
+  display:none;
+}
